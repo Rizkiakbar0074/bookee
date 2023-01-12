@@ -7,6 +7,19 @@ function changePage(prev, next, num) {
     if (num) {
         total += num;
     }
+
+    if(total>=0 && total<=10){
+        // hasil ="tingkat stress rendah"
+        //nanti display hasil stress rendah jadi flex
+    } else if (total>=11 && total<=20){
+        // hasil ="tingkat stress sedang"
+        // nanti display hasil stress sedang jadi flex
+    } else if(total>=21 && total<=30) {
+        // hasil ="tingkat stress tinggi"
+        // nanti display hasil stress tinggi jadi flex
+    }
+
+    
     if (next === 'finish' && (total > 100 || total < 1)) {
         next = 'failed';
     }
